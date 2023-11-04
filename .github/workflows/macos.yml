@@ -20,7 +20,7 @@ jobs:
           # use || true because it returns 1
           brew install  gnu-sed fftw meson libsamplerate sdl2 chromaprint libgtop lilv librsvg adwaita-icon-theme guile gtksourceview5 graphviz zstd npm rt-audio rtmidi jack qjackctl cmake help2man xxhash vamp-plugin-sdk json-glib glib-utils libsass sassc carla faust boost malleefoul/zrythm-reqs/libaudec malleefoul/zrythm-reqs/libbacktrace zix malleefoul/zrythm-reqs/appstream malleefoul/zrythm-reqs/libcyaml malleefoul/zrythm-reqs/libpanel-detach malleefoul/versions/libadwaita@1.4 malleefoul/versions/gtk4@4.13.0 || true
           echo "linking python"
-          brew link --overwrite python
+          brew link --overwrite -f python gtk4@4.13.0 libadwaita@1.4
           #npm install -g appdmg
           echo "installing cmake"
           pip3 install scikit-build
